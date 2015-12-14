@@ -448,10 +448,10 @@ withAutoCompleteString:(NSString *)string
 //        [self.superview insertSubview:self.autoCompleteTableView
 //                         belowSubview:self];
 //#endif
-        if (self.presentOverAllViews == NO) {
+        if (self.presentOverAllViews == YES) {
             [[[UIApplication sharedApplication] keyWindow] addSubview:_autoCompleteTableView];
 //            _autoCompleteTableOriginOffset = CGSizeMake(0, 100);
-            _autoCompleteTableView.frame = CGRectOffset(_autoCompleteTableView.frame, 0, 100);
+            _autoCompleteTableView.frame = CGRectOffset(_autoCompleteTableView.frame, 0, 160);
         } else {
             [self.superview insertSubview:self.autoCompleteTableView
                              belowSubview:self];
