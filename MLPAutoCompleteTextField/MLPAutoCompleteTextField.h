@@ -71,6 +71,7 @@
 @property (strong) UIColor *autoCompleteTableCellBackgroundColor;
 @property (strong) UIColor *autoCompleteTableCellTextColor;
 @property (nonatomic, assign) BOOL presentOverAllViews;
+@property (nonatomic, assign) CGRect autoCompleteTableAbsoluteFrame;
 
 
 - (void)registerAutoCompleteCellNib:(UINib *)nib forCellReuseIdentifier:(NSString *)reuseIdentifier;
